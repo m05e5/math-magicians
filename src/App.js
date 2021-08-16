@@ -1,5 +1,7 @@
+/* eslint-disable */
 import logo from './logo.svg';
 import './App.css';
+/* eslint-enable */
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <p>
+          Hello world
+        </p>
       </header>
     </div>
   );
