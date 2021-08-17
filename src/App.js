@@ -2,16 +2,24 @@
 import './App.css';
 import React from 'react';
 import Calculator from './components/Calculator';
-/* eslint-enable */
 
-function App() {
-  return (
-    <div className="App">
-      <div className="App-body" id="App-body">
-        <Calculator />
+
+class App extends React.Component {
+  /* eslint-enable */
+  // eslint-disable-next-line
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <div className="App-body" id="App-body">
+          <Calculator />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
