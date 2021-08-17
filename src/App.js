@@ -7,9 +7,9 @@ import Calculator from './components/Calculator'
 function App() {
   return (
     <div className="App">
-      <body className="App-body">
+      <div className="App-body">
         <Calculator />
-      </body>
+      </div>
     </div>
   );
 }
