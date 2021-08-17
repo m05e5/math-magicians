@@ -4,12 +4,11 @@ import React from 'react';
 
 class Calculator extends React.Component {
   
-  /* eslint-enable */
-  // eslint-disable-next-line
   constructor(props) {
     super(props);
   }
 
+  /* eslint-enable */
   render() {
     return (
       <div className="calc">
