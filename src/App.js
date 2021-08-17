@@ -1,13 +1,13 @@
 /* eslint-disable */
-import logo from './logo.svg';
 import './App.css';
-import Calculator from './components/Calculator'
+import React from 'react';
+import Calculator from './components/Calculator';
 /* eslint-enable */
 
 function App() {
   return (
     <div className="App">
-      <div className="App-body">
+      <div className="App-body" id="App-body">
         <Calculator />
       </div>
     </div>
