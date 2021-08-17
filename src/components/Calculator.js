@@ -2,13 +2,15 @@
 /* eslint-disable */
 import React from 'react';
 
-/* eslint-enable */
 class Calculator extends React.Component {
+  
+  /* eslint-enable */
   // eslint-disable-next-line
   constructor(props) {
     super(props);
   }
-  render(){
+
+  render() {
     return (
       <div className="calc">
         <input type="number" className="calc-input" name="calc-input" id="calc-input" aria-describedby="helpId" placeholder=" " />
@@ -46,7 +48,6 @@ class Calculator extends React.Component {
       </div>
     );
   }
-  
 }
 
 export default Calculator;
