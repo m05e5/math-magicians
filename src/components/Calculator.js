@@ -1,48 +1,39 @@
+/* eslint-disable no-unused-expressions */
+/* eslint-disable react/no-direct-mutation-state */
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable linebreak-style */
-/* eslint-disable */
+
 import React from 'react';
+import calculate from '../logic/calculator';
 
 class Calculator extends React.Component {
-  
   constructor(props) {
     super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
   }
 
-  /* eslint-enable */
+  handleEvent(e) {
+    const btns = e.target.innerHTML;
+    const boo = calculate(this.state, btns);
+    boo.next !== undefined ? this.state.next = boo.next : null;
+    boo.total !== undefined ? this.state.total = boo.total : null;
+    boo.operation !== undefined ? this.state.operation = boo.operation : null;
+    document.getElementById('calc-p').innerHTML = (this.state.total || '') + (this.state.operation || '') + (this.state.next || '');
+  }
+
   render() {
+    const buttonsList = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
     return (
       <div className="calc">
-        <input type="number" className="calc-input" name="calc-input" id="calc-input" aria-describedby="helpId" placeholder=" " />
+        <div className="calc-input">
+          <p id="calc-p" />
+        </div>
         <table className="calc-buttons">
-          <tr className="tr">
-            <td className="bg-1">AC</td>
-            <td className="bg-1">+/-</td>
-            <td className="bg-1">%</td>
-            <td className="bg-2">+</td>
-          </tr>
-          <tr>
-            <td className="bg-1">7</td>
-            <td className="bg-1">8</td>
-            <td className="bg-1">9</td>
-            <td className="bg-2">x</td>
-          </tr>
-          <tr className="tr">
-            <td className="bg-1">4</td>
-            <td className="bg-1">5</td>
-            <td className="bg-1">6</td>
-            <td className="bg-2">-</td>
-          </tr>
-          <tr className="tr">
-            <td className="bg-1">1</td>
-            <td className="bg-1">2</td>
-            <td className="bg-1">3</td>
-            <td className="bg-2">+</td>
-          </tr>
-          <tr className="tr">
-            <td className="bg-1" colSpan="2">0</td>
-            <td className="bg-1">.</td>
-            <td className="bg-2">=</td>
-          </tr>
+          {buttonsList.map((btn) => <button type="button" onClick={(e) => this.handleEvent(e)} className="btnn" key={btn} name={btn}>{btn}</button>)}
         </table>
       </div>
     );
