@@ -18,11 +18,23 @@ class Calculator extends React.Component {
 
   handleEvent(e) {
     const btns = e.target.innerHTML;
-    const boo = calculate(this.state, btns);
-    boo.next !== undefined ? this.state.next = boo.next : null;
-    boo.total !== undefined ? this.state.total = boo.total : null;
-    boo.operation !== undefined ? this.state.operation = boo.operation : null;
-    document.getElementById('calc-p').innerHTML = (this.state.total || '') + (this.state.operation || '') + (this.state.next || '');
+    if (this.state.operation === '÷' && btns === '=' && this.state.next === '0') {
+      document.getElementById('calc-p').innerHTML = 'Math Error';
+      this.state.next = null;
+      this.state.total = null;
+      this.state.operation = null;
+    } else if (this.state.operation !== null && btns === '=' && this.state.next !== null && this.state.total === null) {
+      document.getElementById('calc-p').innerHTML = 'Syntaxe Error';
+      this.state.next = null;
+      this.state.total = null;
+      this.state.operation = null;
+    } else {
+      const boo = calculate(this.state, btns);
+      boo.next !== undefined ? this.state.next = boo.next : null;
+      boo.total !== undefined ? this.state.total = boo.total : null;
+      boo.operation !== undefined ? this.state.operation = boo.operation : null;
+      document.getElementById('calc-p').innerHTML = (this.state.total || '') + (this.state.operation || '') + (this.state.next || '');
+    }
   }
 
   render() {
