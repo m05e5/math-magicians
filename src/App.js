@@ -1,10 +1,9 @@
-/* eslint-disable */
+/* eslint-disable no-useless-constructor */
 import './App.css';
 import React from 'react';
 import Calculator from './components/Calculator';
 
-
-class App extends React.Component {
+class App extends React.PureComponent {
   constructor(props) {
     super(props);
   }
