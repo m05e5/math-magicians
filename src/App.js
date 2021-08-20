@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-useless-constructor */
 import './App.css';
 import React from 'react';
@@ -8,7 +9,6 @@ class App extends React.PureComponent {
     super(props);
   }
 
-  /* eslint-enable */
   render() {
     return (
       <div className="App">
