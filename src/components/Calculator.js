@@ -1,8 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable react/no-direct-mutation-state */
-/* eslint-disable react/destructuring-assignment */
-
 import React, { useState } from 'react';
 import calculate from '../logic/calculator';
 
