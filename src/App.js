@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-useless-constructor */
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -13,10 +11,6 @@ import Quote from './components/Quote';
 import Header from './components/Header';
 
 class App extends React.PureComponent {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="App">
