@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-
 import React, { useState } from 'react';
 import calculate from '../logic/calculator';
 
