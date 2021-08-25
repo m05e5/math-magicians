@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the Calculator App  component 1`] = `
+<div
+  className="App"
+>
+  <header>
+    <h1>
+      Math Magicians
+    </h1>
+    <nav>
+      <ul
+        className="navUl"
+      >
+        <li>
+          <a
+            className="navLink"
+            href="/"
+            onClick={[Function]}
+          >
+            home
+          </a>
+        </li>
+        |
+        <li>
+          <a
+            className="navLink"
+            href="/calculator"
+            onClick={[Function]}
+          >
+            calculator
+          </a>
+        </li>
+        |
+        <li>
+          <a
+            className="navLink"
+            href="/quote"
+            onClick={[Function]}
+          >
+            quote
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    className="App-body"
+    id="App-body"
+  >
+    <div
+      className="home"
+    >
+      <h2>
+        Wecome to our page!
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatibus aspernatur, molestias dicta enim fuga perspiciatis non ratione ullam, iste natus fugiat temporibus veniam impedit distinctio quis? Ab, commodi eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatibus aspernatur, molestias dicta enim fuga perspiciatis non ratione ullam, iste natus fugiat temporibus veniam impedit distinctio quis? Ab, commodi eligendi!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatibus aspernatur, molestias dicta enim fuga perspiciatis non ratione ullam, iste natus fugiat temporibus veniam impedit distinctio quis? Ab, commodi eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatibus aspernatur, molestias dicta enim fuga perspiciatis non ratione ullam, iste natus fugiat temporibus veniam impedit distinctio quis? Ab, commodi eligendi!
+      </p>
+    </div>
+  </div>
+</div>
+`;
