@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checking operators test the result of + operation 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "14",
+}
+`;
+
+exports[`checking operators test the result of +/- 1`] = `
+Object {
+  "next": "-9",
+}
+`;
+
+exports[`checking operators test the result of - operation 1`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "-4",
+}
+`;
+
+exports[`checking operators test the result of - operation 2`] = `
+Object {
+  "next": null,
+  "operation": null,
+  "total": "-4",
+}
+`;
