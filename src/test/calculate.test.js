@@ -1,4 +1,6 @@
 // import operate from '../logic/operate';
+// import { Link } from 'react-router-dom';
+// import renderer from 'react-test-renderer';
 import calculate from '../logic/calculator';
 
 describe('checking operators', () => {
@@ -52,3 +54,10 @@ describe('checking operators', () => {
     });
   });
 });
+
+// it('renders correctly', () => {
+//   const tree = renderer
+//     .create(<Link to="/calculator" className="navLink">calculator</Link>)
+//     .toJSON();
+//   expect(tree).toMatchSnapshot();
+// });
