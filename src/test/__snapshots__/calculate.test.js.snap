@@ -21,11 +21,3 @@ Object {
   "total": "-4",
 }
 `;
-
-exports[`checking operators test the result of - operation 2`] = `
-Object {
-  "next": null,
-  "operation": null,
-  "total": "-4",
-}
-`;
