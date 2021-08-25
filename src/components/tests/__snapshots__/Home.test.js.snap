@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Creates a snapshot for Home Page and it should be the same with the previous snapshot 1`] = `
+<header>
+  <h2>
+    Welcome to our page!
+  </h2>
+  <p>
+    A mathemagician is a mathematician who is also a magician. The term "mathemagic"  is believed to have been introduced by Royal Vale Heath with his 1933 book "Mathemagic".[1]
+    <span
+      className="name"
+    >
+      The name "mathemagician" was probably first applied to Martin Gardner, but has since been used to describe many mathematician/magicians, ncluding Arthur T. Benjamin,[2] Persi Diaconis,[3] and Colm Mulcahy.[4] Diaconis has suggested that the reason so many mathematicians are magicians is that "inventing a magic trick and inventing a theorem are very similar activities."[5]
+    </span>
+    <span
+      className="name"
+    >
+      The Mathemagician is name of a character in the 1961 children's book The Phantom Tollbooth. He is the ruler of Digitopolis, the kingdom of mathematics.
+    </span>
+  </p>
+</header>
+`;
+
+exports[`Creates a snapshot of the home page and it should match the previous one 1`] = `
+<header>
+  <h2>
+    Welcome to our page!
+  </h2>
+  <p>
+    A mathemagician is a mathematician who is also a magician. The term "mathemagic"  is believed to have been introduced by Royal Vale Heath with his 1933 book "Mathemagic".[1]
+    <span
+      className="name"
+    >
+      The name "mathemagician" was probably first applied to Martin Gardner, but has since been used to describe many mathematician/magicians, ncluding Arthur T. Benjamin,[2] Persi Diaconis,[3] and Colm Mulcahy.[4] Diaconis has suggested that the reason so many mathematicians are magicians is that "inventing a magic trick and inventing a theorem are very similar activities."[5]
+    </span>
+    <span
+      className="name"
+    >
+      The Mathemagician is name of a character in the 1961 children's book The Phantom Tollbooth. He is the ruler of Digitopolis, the kingdom of mathematics.
+    </span>
+  </p>
+</header>
+`;
