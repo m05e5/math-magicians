@@ -4,6 +4,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## deployment linke
+
+- [heroku](https://boiling-fortress-24927.herokuapp.com)
+- [netlify](https://612cb78114147c9cbf2db7d0--moses-math-magicians.netlify.app/)
 
 ## Languages and tools
 
